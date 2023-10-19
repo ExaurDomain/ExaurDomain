@@ -10,6 +10,18 @@ closeModalButton.addEventListener("click", () => {
     loginModal.style.display = "none";
 });
 
+const textElement = document.getElementById('changing-text');
+const colors = ['#ff8c00', 'green', '#ff8c00', 'green']; // Add more colors as needed
+let currentColorIndex = 0;
+
+function changeTextColor() {
+  textElement.style.color = colors[currentColorIndex];
+  currentColorIndex = (currentColorIndex + 1) % colors.length;
+}
+
+setInterval(changeTextColor, 1000); // Change color every 1 second (1000 milliseconds)
+
+
 /*ABOUT MUSIC ARTIST */
 
 // JavaScript (script.js)
