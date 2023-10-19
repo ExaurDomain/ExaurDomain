@@ -1,0 +1,362 @@
+header {
+    background: linear-gradient(to bottom, #00ff55, #000000); /* Gradient from black to green */
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    max-height: 50px;
+}
+
+/* Logo Styles */
+.logo {
+    font-size: 40px;
+    display: inline-block;
+    position: relative;
+    color: #ffffff; /* Initial text color */
+    transition: color 0.3s ease-in-out; /* Add transition effect for smooth color change */
+}
+
+/* Apply gradient text color on hover */
+.logo:hover {
+    background: linear-gradient(to right, #a4e79b, #51ff00, #04d148, #03b40c); /* Gradient background colors */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* Hide the original text */
+}
+
+/* Home section styles */
+.home h2 {
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 170px;
+    letter-spacing: 6px;
+    word-spacing: 6px;
+    color: #13a106;
+    font-weight: 400;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    text-align: start;
+    text-shadow: rgb(99, 74, 74);
+    margin-bottom: 10px; /* Reduce the margin-bottom */
+}
+.home p {
+    font-size: 30px;
+    text-align: start;
+    color: #084200;
+    padding-bottom: 10px; /* Reduce the padding-bottom */
+    font-weight: bolder;
+    justify-self: left;
+    width: 70%;
+    margin-bottom: 10px; /* Reduce the margin-bottom */
+}
+
+/* Navigation links styles */
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+    color: #00ff00; /* Change to the desired hover color */
+}
+
+/* Body styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #000000, #000000);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    max-height: max-content;
+}
+
+.background-music-symbol {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(BGIF.gif); /* Replace with your music symbol image */
+    background-repeat: no-repeat;
+    background-size: 100px;
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: -1; /* Send it to the background */
+    animation: animateMusicSymbol 20s linear infinite;
+}
+.about{
+    background: linear-gradient(to bottom, #00ff00, #000000); /* Gradient from green to black */
+}
+
+/* Sections styles */
+section {
+    text-align: center;
+    padding: 50px;
+}
+.music{
+    background: linear-gradient(to bottom, #000000, #00ff00); /* Gradient from blue to green */
+}
+/* Style the artist container */
+.artist-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Add this CSS to your existing styles or stylesheet */
+.artist-info {
+    width: 200px; /* Adjust the width as needed */
+    text-align: center;
+    margin: 10px; /* Add margin for spacing between artists */
+    transition: transform 0.3s; /* Add a smooth transition effect for scaling */
+    display: flex;
+    flex-direction: column;
+    position: relative; /* Add relative positioning to artist-info */
+}
+
+.artist-info:hover {
+    transform: scale(1.1); /* Scale the artist container on hover (adjust the scale factor as needed) */
+}
+
+.artist-image {
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%); /* Convert image to black and white by default */
+    transition: filter 0.9; /* Add a smooth transition effect for filter */
+}
+
+.artist-image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.artist-info h3 {
+    margin-top: 5px; /* Adjust the margin to reduce space between the image and the artist's name */
+    padding-left: 170px;
+}
+
+.artist-info:hover .artist-image {
+    filter: grayscale(0%); /* Revert the image to its original color on hover */
+}
+
+
+
+
+/* Style the button container */
+.button-container {
+    text-align: start;
+    padding-left: 20px;
+}
+
+/* Style the "Choose Artist" button to fit the text */
+#choose-artist-button {
+    padding: 10px 20px; /* Adjust padding as needed */
+    border-radius: 12px;
+    background-color: rgb(41, 100, 41);
+    color: white;
+    justify-content: left;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: transform 5s ease-in-out;
+    
+    /* Add background blur */
+    backdrop-filter: blur(5px); /* Adjust the blur value as needed */
+}
+/* Add hover effect for the button */
+#choose-artist-button:hover {
+    background-color: rgba(78, 78, 78, 0.8); /* Change to your desired hover background color with opacity */
+    color: rgb(9, 255, 0); /* Change to your desired hover text color */
+    transform: scale(1); /* Add a scaling effect on hover */
+}
+
+/* Center the artist links */
+.artist-info a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; /* Remove underlines from links */
+    color: #afa1a1; /* Set link color */
+    transition: color 0.3s ease-in-out; /* Add a color transition effect */
+}
+
+.artist-info a:hover {
+    color: #00ff00; /* Change to the desired hover color */
+}
+
+/* Style artist images (optional) */
+.artist-info img {
+    max-width: 100%;
+    height: auto;
+    padding: 50%;
+}
+.artist-container h3{
+    padding-bottom: 500px;
+}
+
+
+/* Footer styles */
+footer {
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    width: 100%;
+    position: static;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.company-info a {
+    text-decoration: none; /* Removes underlining from links */
+    color: #ffffff; /* Sets link color to black, but you can choose any color */
+    transition: color 0.3s ease-in-out; /* Optional: adds a smooth color transition on hover */
+}
+
+.company-info a:hover {
+    color: #007BFF; /* Changes the link color on hover to a shade of blue, adjust as desired */
+}
+.community-links a {
+    text-decoration: none; /* Removes underlining from links */
+    color: #ffffff; /* Sets link color to black, but you can choose any color */
+    transition: color 0.3s ease-in-out; /* Optional: adds a smooth color transition on hover */
+}
+
+.community-links a:hover {
+    color: #007BFF; /* Changes the link color on hover to a shade of blue, adjust as desired */
+}
+.useful-links a {
+    text-decoration: none; /* Removes underlining from links */
+    color: #ffffff; /* Sets link color to black, but you can choose any color */
+    transition: color 0.3s ease-in-out; /* Optional: adds a smooth color transition on hover */
+}
+
+.useful-links a:hover {
+    color: #007BFF; /* Changes the link color on hover to a shade of blue, adjust as desired */
+}
+
+.footer-nav li {
+    margin-right: 20px;
+}
+
+.footer-nav li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-nav li a:hover {
+    color: #00ff00; /* Change to the desired hover color */
+}
+
+/* Login form styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(8px);
+}
+
+.modal h2 {
+    font-size: 30px;
+    color: greenyellow;
+    padding-bottom: 10px;
+}
+
+#login-form {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border-radius: 5px;
+    width: 320px;
+    padding: 30px;
+    text-align: center;
+}
+
+.input-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button[type="submit"],
+button.close-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-button {
+    margin-top: 10px;
+}
+
+.close-button:hover {
+    background-color: #555;
+}
+
+/* Background music symbol animation */
+@keyframes animateMusicSymbol {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
