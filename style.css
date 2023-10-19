@@ -1,3 +1,15 @@
+/* CSS for responsive navigation */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav-links li {
+    margin-bottom: 10px;
+  }
+}
+
 header {
     background: linear-gradient(to bottom, #00ff55, #000000); /* Gradient from black to green */
     color: rgb(255, 255, 255);
