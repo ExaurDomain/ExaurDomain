@@ -1,14 +1,15 @@
 /* CSS for responsive navigation */
 @media screen and (max-width: 768px) {
-  .nav-links {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    .nav-links li {
+      margin-bottom: 10px;
+    }
   }
-  .nav-links li {
-    margin-bottom: 10px;
-  }
-}
+
 
 header {
     background: linear-gradient(to bottom, #00ff55, #000000); /* Gradient from black to green */
@@ -53,6 +54,11 @@ header {
     text-shadow: rgb(99, 74, 74);
     margin-bottom: 10px; /* Reduce the margin-bottom */
 }
+/* Add transition for smooth color change */
+#changing-text {
+    transition: color 0.9s ease-in-out;
+}
+
 .home p {
     font-size: 30px;
     text-align: start;
