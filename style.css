@@ -1,7 +1,7 @@
 /* CSS for responsive navigation */
 @media screen and (max-width: 768px) {
     .nav-links {
-      display: flex;
+      display: none;
       flex-direction: column;
       text-align: center;
     }
