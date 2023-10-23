@@ -11,7 +11,7 @@ closeModalButton.addEventListener("click", () => {
 });
 
 const textElement = document.getElementById('changing-text');
-const colors = ['#ff8c00', 'green', '#ff8c00', 'green']; // Add more colors as needed
+const colors = ['#ff8c00', 'green', '#ff8c00', 'green'];
 let currentColorIndex = 0;
 
 function changeTextColor() {
@@ -19,12 +19,8 @@ function changeTextColor() {
   currentColorIndex = (currentColorIndex + 1) % colors.length;
 }
 
-setInterval(changeTextColor, 1000); // Change color every 1 second (1000 milliseconds)
+setInterval(changeTextColor, 3000);
 
-
-/*ABOUT MUSIC ARTIST */
-
-// JavaScript (script.js)
 document.addEventListener('DOMContentLoaded', function () {
     const artistLinks = document.querySelectorAll('.artist-link');
 
@@ -37,19 +33,13 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     function loadArtistPage(artistId) {
-        // Hide other sections (e.g., welcome and artist list)
         document.getElementById('welcome').style.display = 'none';
         document.getElementById('artist-list').style.display = 'none';
-
-        // Load the artist's page using AJAX or other methods
-        // For simplicity, let's assume the artist's pages are named artist1.html, artist2.html, etc.
         const artistPageUrl = `${artistId}.html`;
 
-        // Fetch the artist's page content
         fetch(artistPageUrl)
             .then((response) => response.text())
             .then((html) => {
-                // Display the artist's page content
                 const artistPageContainer = document.getElementById('artist-page-container');
                 artistPageContainer.innerHTML = html;
                 artistPageContainer.style.display = 'block';
@@ -59,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
             });
     }
 });
-// Function to toggle the visibility of the artist container
+
 function toggleArtistContainer() {
     var artistContainer = document.getElementById('artist-container');
     if (artistContainer.style.display === 'none') {
@@ -69,6 +59,5 @@ function toggleArtistContainer() {
     }
 }
 
-// Add an event listener to the "Choose Artist" button
 var chooseArtistButton = document.getElementById('choose-artist-button');
 chooseArtistButton.addEventListener('click', toggleArtistContainer);
