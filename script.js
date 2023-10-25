@@ -11,7 +11,7 @@ closeModalButton.addEventListener("click", () => {
 });
 
 const textElement = document.getElementById('changing-text');
-const colors = ['#ff8c00', 'green', '#ff8c00', 'green'];
+const colors = ['#ff8c00', 'green', '#ff8c00', 'green']; 
 let currentColorIndex = 0;
 
 function changeTextColor() {
@@ -19,7 +19,7 @@ function changeTextColor() {
   currentColorIndex = (currentColorIndex + 1) % colors.length;
 }
 
-setInterval(changeTextColor, 3000);
+setInterval(changeTextColor, 3000); 
 
 document.addEventListener('DOMContentLoaded', function () {
     const artistLinks = document.querySelectorAll('.artist-link');
@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function loadArtistPage(artistId) {
         document.getElementById('welcome').style.display = 'none';
         document.getElementById('artist-list').style.display = 'none';
+
         const artistPageUrl = `${artistId}.html`;
 
         fetch(artistPageUrl)
@@ -49,7 +50,6 @@ document.addEventListener('DOMContentLoaded', function () {
             });
     }
 });
-
 function toggleArtistContainer() {
     var artistContainer = document.getElementById('artist-container');
     if (artistContainer.style.display === 'none') {
