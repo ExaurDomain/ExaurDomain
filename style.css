@@ -1,11 +1,11 @@
 @media screen and (max-width: 768px) {
     .nav-links {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
     }
     .nav-links li {
-        margin-bottom: 10px;
+      margin-bottom: 10px;
     }
 }
 
@@ -14,7 +14,7 @@ header {
     color: rgb(255, 255, 255);
     padding: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: center;
     max-height: 50px;
 }
@@ -28,7 +28,7 @@ header {
 }
 
 .logo:hover {
-    background: linear-gradient(to right, #a4e79b, #51ff00, #04d148, #03b40c);
+    background: linear-gradient(to bottom, #a4e79b, #51ff00, #04d148, #03b40c);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -135,7 +135,17 @@ section {
 }
 
 .music {
-    background: linear-gradient(to bottom, #000000, #00ff00);
+    background: linear-gradient(to bottom, #000000, #000000, #00ff00, #00ff00);
+}
+
+.music p {
+    margin-left: 350px;
+    justify-content: center;
+    font-family: "Tahoma", "Geneva", "sans-serif";
+    font-size: 20px;
+    letter-spacing: 3px;
+    word-spacing: 6px;
+    color: #FFFFFF;
 }
 
 .artist-container {
@@ -174,7 +184,7 @@ section {
 
 .artist-info h3 {
     margin-top: 5px;
-    padding-left: 170px;
+    padding-left: 190px;
 }
 
 .artist-info:hover .artist-image {
@@ -221,7 +231,7 @@ section {
     color: #00ff00;
 }
 
-.artist-info img {
+.artist-container img {
     max-width: 100%;
     height: auto;
     padding: 50%;
@@ -241,13 +251,6 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-}
-
-.footer-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    align-items: center;
 }
 
 .page-info a {
