@@ -184,7 +184,7 @@ section {
 
 .artist-info h3 {
     margin-top: 5px;
-    padding-left: 190px;
+    padding-left: 0px;
 }
 
 .artist-info:hover .artist-image {
